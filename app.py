@@ -1,5 +1,4 @@
 from flask import Flask
-from flask_ngrok import run_with_ngrok
 from flask_cors import CORS, cross_origin
 from tensorflow.keras.models import load_model
 from PIL import Image
@@ -7,7 +6,7 @@ import numpy as np
 from deepface import DeepFace
 
 app = Flask(__name__)
-run_with_ngrok(app) # ngrok colab
+
 
 model = load_model('MobileNetV3Large.h5')
 
