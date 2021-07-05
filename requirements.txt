@@ -3,5 +3,5 @@ flask_cors
 flask_ngrok
 tensorflow
 numpy
-PIL
+Pillow
 deepface
