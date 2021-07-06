@@ -50,6 +50,3 @@ def process():
     img = detect_face(img)
     age = predict_age(img)
     return str(age)
-
-if __name__ == '__main__':
-  app.run()
