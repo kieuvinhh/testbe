@@ -1,10 +1,5 @@
-Flask-Cors==3.0.10
-google-pasta==0.2.0
-h5py==2.10.0
-HeapDict==1.0.1
-hypothesis==5.5.4
-imutils==0.5.4
-json5==0.9.5
-Keras==2.4.3
-opencv-contrib-python==4.5.2.52
-tensorflow==2.5.0
+flask
+tensorflow
+deepface
+numpy
+Pillow
