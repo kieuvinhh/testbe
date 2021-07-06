@@ -46,9 +46,9 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @cross_origin(origin='*')
 def process():
     img_arg_base64 = request.form.get('img')
-    img1 = ConvBase64toImage(img_arg_base64)
-    img2 = detect_face(img1)
-    age = predict_age(img2)
+    img = ConvBase64toImage(img_arg_base64)
+    img = detect_face(img)
+    age = predict_age(img)
     return str(age)
 
 if __name__ == '__main__':
