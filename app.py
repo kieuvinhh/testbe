@@ -42,7 +42,7 @@ def predict_age(image):
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-@app.route('/image', methods=['POST'])
+@app.route('/', methods=['POST'])
 @cross_origin(origin='*')
 def process():
     img_arg_base64 = request.form.get('img')
